@@ -1,0 +1,92 @@
+!-- info --
+style.name: Stilski
+style.author: RiDeag
+
+!-- background --
+! rootCommand: bsetroot -full "backgrounds\image_name.jpg"
+
+!-- toolbar --
+toolbar.appearance: flat solid
+toolbar.backgroundColor: #223445
+toolbar.textColor: #dedede
+toolbar.marginWidth: 0
+toolbar.font: Segoe UI Semibold
+toolbar.fontHeight: 15
+toolbar.alignment: center
+toolbar.label.appearance: parentrelative
+toolbar.label.textColor: #828282
+toolbar.label.marginWidth: 4
+toolbar.windowLabel.appearance: flat solid
+toolbar.windowLabel.backgroundColor: #395875
+toolbar.windowLabel.textColor: #ffffff
+toolbar.clock.appearance: parentrelative
+toolbar.clock.textColor: #dedede
+toolbar.button.appearance: flat solid
+toolbar.button.backgroundColor: #303438  
+toolbar.button.foregroundColor: #303438
+!toolbar.button.foregroundColor: #dedede
+toolbar.button.marginWidth: 0
+toolbar.button.pressed.appearance: parentrelative
+toolbar.button.pressed.foregroundColor: #303438
+
+!-- menu --
+menu.title.appearance: flat solid
+menu.title.backgroundColor: #FFFFFF
+menu.title.textColor: #dedede
+menu.title.marginWidth: 1
+menu.title.font: Segoe UI
+menu.title.fontHeight: 1
+menu.title.alignment: right
+menu.frame.appearance: flat solid
+menu.frame.backgroundColor: #FFFFFF
+menu.frame.foregroundColor: #252629
+menu.frame.textColor: #4d4d4d
+menu.frame.disabledColor: #626262
+menu.frame.marginWidth: 0
+menu.frame.font: Segoe UI
+menu.frame.fontHeight: 13
+menu.frame.alignment: right
+menu.active.appearance: parentrelative
+menu.active.foregroundColor: #999999
+menu.active.textColor: #999999
+menu.active.marginWidth: 5
+menu.bullet: triangle
+menu.bullet.position: right
+
+!-- window --
+window.title.focus.appearance: flat solid
+window.title.focus.backgroundColor: #1b1b1b
+window.label.focus.appearance: parentrelative
+window.label.focus.textColor: #52728e
+window.handle.focus.appearance: flat solid
+window.handle.focus.backgroundColor: #626262
+window.grip.focus.appearance: flat solid
+window.grip.focus.backgroundColor: #000000
+window.button.focus.appearance: parentrelative
+window.button.focus.foregroundColor: #748981
+window.button.pressed.appearance: parentrelative
+window.button.pressed.foregroundColor: #d6d6d6
+window.title.unfocus.appearance: flat solid
+window.title.unfocus.backgroundColor: #1b1b1b
+window.label.unfocus.appearance: parentrelative
+window.label.unfocus.textColor: #52728e
+window.handle.unfocus.appearance: flat solid
+window.handle.unfocus.backgroundColor: #4b4b4b
+window.grip.unfocus.appearance: parentrelative
+window.button.unfocus.appearance: parentrelative
+window.button.unfocus.foregroundColor: #748981
+window.title.marginWidth: 1
+window.label.marginWidth: 2
+window.button.marginWidth: 1
+window.frame.focus.borderColor: #f5f5f5
+window.frame.unfocus.borderColor: #f5f5f5
+window.frame.borderWidth: 0
+window.handleHeight: 0
+window.font: HaxrCorp S8
+window.fontHeight: 1
+window.alignment: center
+
+!-- slit --
+slit.appearance: flat solid
+slit.backgroundColor: #292929
+slit.marginWidth: 1
