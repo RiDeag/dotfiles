@@ -1,0 +1,8 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+body > img.decoded {
+  background: none !important;
+}
+
+body > img.decoded:hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABlBMVEV7e3sAAAD2vrKOAAAAAnRSTlM7O/sqyyQAAAAfSURBVHja1c6hAQAAAAFB9l9aYwGBj5ceie4bZ0ZaKKW0AMmwXSJmAAAAAElFTkSuQmCC) !important;
+}
