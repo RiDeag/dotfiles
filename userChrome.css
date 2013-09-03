@@ -1,4 +1,12 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* Remove some Source viewer options */
+#viewSource-toolbox {display:none !important;}
+#context-back {display:none !important;}
+#context-forward {display:none !important;}
+#cMenu_findAgain {display:none !important;}
+#cMenu_selectAll {display:none !important;}
+#viewSourceContextMenu > menuseparator {display:none !important;}
+#viewSource > statusbar {display:none !important;}
 
 /*
 #main-window {
@@ -182,6 +190,10 @@ tab {
   margin-bottom: -1px !important;
   border-bottom: none !important;
   border-top: none !important;
+}
+
+#main-window[sizemode=maximized] #nav-bar {
+  margin-top: -1px !important;
 }
 
 /* "combines" stop and reload button */
