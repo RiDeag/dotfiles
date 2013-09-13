@@ -7,7 +7,7 @@ style.author: RiDeag
 
 !-- toolbar --
 toolbar.appearance: flat solid
-toolbar.backgroundColor: #223445
+toolbar.backgroundColor: #2f3a4d
 toolbar.textColor: #dedede
 toolbar.marginWidth: 0
 toolbar.font: Segoe UI Semibold
@@ -17,17 +17,16 @@ toolbar.label.appearance: parentrelative
 toolbar.label.textColor: #828282
 toolbar.label.marginWidth: 4
 toolbar.windowLabel.appearance: flat solid
-toolbar.windowLabel.backgroundColor: #395875
+toolbar.windowLabel.backgroundColor: #4f6386
 toolbar.windowLabel.textColor: #ffffff
 toolbar.clock.appearance: parentrelative
 toolbar.clock.textColor: #dedede
 toolbar.button.appearance: flat solid
-toolbar.button.backgroundColor: #303438  
-toolbar.button.foregroundColor: #303438
-!toolbar.button.foregroundColor: #dedede
+toolbar.button.backgroundColor: #2f3a4d
+toolbar.button.foregroundColor: #2f3a4d
 toolbar.button.marginWidth: 0
 toolbar.button.pressed.appearance: parentrelative
-toolbar.button.pressed.foregroundColor: #303438
+toolbar.button.pressed.foregroundColor: #2f3a4d
 
 !-- menu --
 menu.title.appearance: flat solid
