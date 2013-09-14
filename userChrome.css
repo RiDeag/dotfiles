@@ -1,10 +1,9 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/*
+
 #main-window {
-  margin-top: -16px !important;
   -moz-appearance: -moz-win-glass !important;
-}*/
+}
 
 #urlbar-reload-button,
 .urlbar-history-dropmarker,
@@ -12,8 +11,6 @@
 #page-proxy-favicon,
 #go-button,
 #notification-popup-box,
-/*#browser-bottombox,
-#browser-topbox,*/
 #tabbrowser-tabs .scrollbutton-up,
 #tabbrowser-tabs .scrollbutton-down,
 #browser-border-start,
@@ -65,22 +62,16 @@ select > input {
 }
 
 #main-window .tabbrowser-tab:first-of-type .tab-stack {
-  border-top-left-radius: 2px !important;
+  border-top-left-radius: 3px !important;
 }
 
 #main-window .tabbrowser-tab:last-of-type .tab-stack {
-  border-top-right-radius: 2px !important;
+  border-top-right-radius: 3px !important;
 }
 
 tab {
   font-family: "Segoe UI", sans-serif !important;
   text-align: center !important;
-}
-
-#main-window #tabbrowser-tabs tab[fadein]:not([pinned]):first-of-type .tab-stack,
-#main-window #tabbrowser-tabs tab[pinned]:first-of-type .tab-stack {
-  margin-left: 0px !important;
-  border-left-color: rgba(71,79,115,.35) !important;
 }
 
 #main-window #tabbrowser-tabs tab[fadein]:not([pinned]) {
@@ -93,8 +84,6 @@ tab {
 .tabbrowser-tab:not([pinned]) .tab-icon-image {
    visibility: collapse !important;
 }
-
-/* Tab Height */
 
 #main-window .tabbrowser-tab .tab-stack {
   height: 26px !important;
@@ -110,14 +99,23 @@ tab {
   border-left-color: rgba(71,79,115,.20) !important;
   background-clip: padding-box !important;
   border-radius: 0 !important;
-  padding: 0 2px !important;
+  padding: 0 10px !important;
   margin-top: 1px !important;
   margin-left: -1px !important;
   box-shadow: 0px -1px 0px rgba(20,23,26,.04),
               0px  1px 0px rgba(255,255,255,.25) inset,
               1px  0px 0px rgba(255,255,255,.15) inset,
              -1px  0px 0px rgba(255,255,255,.15) inset !important;
+}
 
+#main-window #tabbrowser-tabs tab[pinned] .tab-stack {
+  padding: 0 2px !important;
+}
+
+#main-window #tabbrowser-tabs tab[fadein]:not([pinned]):first-of-type .tab-stack,
+#main-window #tabbrowser-tabs tab[pinned]:first-of-type .tab-stack {
+  margin-left: 0px !important;
+  border-left-color: rgba(71,79,115,.25) !important;
 }
 
 #main-window .tabbrowser-tab:last-of-type > .tab-stack {
@@ -156,6 +154,37 @@ tab {
 @keyframes newpost {
   25% {  transform: scale(1.1);   }
 }
+
+/* new tab button */
+
+.tabs-newtab-button {
+  float: right !important;
+  margin-top: 1px !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  background: #e6e6e6 !important;
+  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, .5) !important;
+  border: 1px solid rgba(71,79,115,.25) !important;
+  border-bottom: none !important;
+  border-radius: 2px 2px 0 0 !important;
+}
+
+.tabs-newtab-button .toolbarbutton-icon {
+  margin-bottom: -3px !important;
+}
+
+.tabs-newtab-button:hover {
+  background-image: -moz-linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .6)) !important;
+}
+
+.tabs-newtab-button:active {
+  background-color: #f2f2f2 !important;
+  box-shadow: none !important;
+  background-image: -moz-linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.5) 50%) !important;
+  color: #444 !important;
+}
+
+
 
 /**
     URL BAR
