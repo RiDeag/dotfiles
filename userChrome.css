@@ -169,22 +169,6 @@ tab {
 
 /* Standard Tabs */
 
-/*#main-window .tabbrowser-tab {
-  border-width: 1px 0 0 1px !important;
-  border-style: solid !important;
-  border-top-color: rgba(71,79,115,.25) !important;
-  border-left-color: rgba(71,79,115,.20) !important;
-  background-clip: padding-box !important;
-  border-radius: 0 !important;
-  padding: 0 10px !important;
-  margin-top: 1px !important;
-  margin-left: -1px !important;
-  box-shadow: 0px -1px 0px rgba(20,23,26,.04),
-              0px  1px 0px rgba(255,255,255,.25) inset,
-              1px  0px 0px rgba(255,255,255,.15) inset,
-             -1px  0px 0px rgba(255,255,255,.15) inset !important;
-}*/
-
 #main-window .tabbrowser-tab {
   border-width: 0px 0 0 1px !important;
   border-style: solid !important;
@@ -195,16 +179,6 @@ tab {
 #main-window #tabbrowser-tabs tab[pinned] {
   padding: 0 2px !important;
 }
-
-/*#main-window #tabbrowser-tabs tab[fadein]:not([pinned]):first-of-type,
-#main-window #tabbrowser-tabs tab[pinned]:first-of-type {
-  margin-left: 0px !important;
-  border-left-color: rgba(71,79,115,.25) !important;
-}
-
-#main-window .tabbrowser-tab:last-of-type {
-  border-right: 1px solid rgba(71,79,115,.25) !important;
-}*/
 
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
   background-color: #e6e6e6 !important;
@@ -242,6 +216,7 @@ tab {
 /* new tab button */
 
 .tabs-newtab-button {
+	width: 38px !important;
   float: right !important;
   margin-top: 1px !important;
   padding-left: 2px !important;
@@ -272,35 +247,12 @@ tab {
     URL BAR
 */
 
-/*#navigator-toolbox {
-  margin-bottom: -1px !important; 
-}*/
-
-
-
-/* url bar container */
-/*
-#nav-bar {
-  border-radius: 0 !important;
-  background: #f7f7f8 !important;
-  -moz-appearance: none !important;
-  border-right: none !important;
-  border-left: none !important;
-  padding: 5px 0 !important;
-  margin-top: 1px !important;
-
-  border-bottom: 1px solid red !important;
-  border-top: none !important;
-}*/
-
 #nav-bar {
   background: #f9f9f9 !important;
-  padding: 5px 0 3px 0 !important;
+  padding: 2px 0 0px 0 !important;
   border-radius: 0 !important;
   margin-top: 1px !important;
   border: none !important;
-  /*border-bottom: none !important;
-  /*border-top: none !important;*/
 }
 
 #main-window[sizemode=maximized] #nav-bar {
@@ -571,6 +523,10 @@ tab {
     opacity: 1.0 !important;
 }
 
+#TabsToolbar > #new-tab-button {
+	width: 10px !important;
+}
+
 #back-button,
 #back-button .toolbarbutton-icon,
 #forward-button,
@@ -605,34 +561,37 @@ window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlb
   transition: none !important;
 }
 
+#main-window:not([customizing]) #back-button[disabled] > .toolbarbutton-icon {
+  box-shadow: none !important;
+}
+
 /**
   SCROLLBAR
 */
 
-scrollbar, scrollcorner{
+scrollbar, scrollcorner {
   -moz-appearance: -moz-win-borderless-glass !important;
   border: none !important;
   background:transparent !important;
 }
 
-scrollbarbutton{
+scrollbarbutton {
   opacity: .2 !important;
   border: none !important;
 }
 
-scrollbar thumb{ 
+scrollbar thumb { 
   opacity: .5 !important;
   background: transparent !important;
 }
 
-scrollbarbutton:hover{
+scrollbarbutton:hover {
   opacity: .4 !important;
 }
 
-#content, #appcontent{
+#content, #appcontent {
   background-color: transparent !important;
 }
-
 
 scrollbar,
 scrollbar > slider,
@@ -782,4 +741,3 @@ scrollbar > slider > thumb:active {
 .addon-control{
   padding: 0px !important;
 }
-
