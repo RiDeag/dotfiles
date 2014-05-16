@@ -181,9 +181,9 @@ tab {
 }
 
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
-  background-color: #e6e6e6 !important;
-  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, .3) !important;
-  color: #666 !important;
+  background-color: #EFEFEF !important;
+  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, 0.1) !important;
+  color: #7D7D7D !important;
 }
 
 
@@ -191,6 +191,7 @@ tab {
 
 #main-window .tabbrowser-tab:-moz-any(:not([pinned]),[pinned]:not([titlechanged])):not([selected]):hover {
   background-image: -moz-linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .6)) !important;
+  color: #666 !important;
 }
 
 /* Selected Tab */
@@ -199,7 +200,7 @@ tab {
   background-color: #f2f2f2 !important;
   box-shadow: none !important;
   background-image: -moz-linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.5) 50%) !important;
-  color: #444 !important;
+  color: #666 !important;
 }
 
 /* Pinned tab titlechange */
@@ -248,11 +249,18 @@ tab {
 */
 
 #nav-bar {
+	-moz-appearance: none !important;
   background: #f9f9f9 !important;
-  padding: 2px 0 0px 0 !important;
+  border: none !important;
+  height: 35px !important;
+  padding: 0px 0 0px 0 !important;
   border-radius: 0 !important;
   margin-top: 1px !important;
-  border: none !important;
+  box-shadow: 0px 1px 0px #f9f9f9 inset !important;
+}
+
+#nav-bar > * {
+	margin-top: -3px !important;
 }
 
 #main-window[sizemode=maximized] #nav-bar {
@@ -276,12 +284,12 @@ tab {
   color: rgb(98,98,98) !important;
   border-radius: 2px !important;
   background: #fff !important;
-  height: 26px !important;
+  height: 25px !important;
   font-family:"Segoe UI", sans-serif !important;
   font-size: 10pt !important;
 
-  margin-top: -2px !important;
-  padding: 0 0 2px 5px !important;
+  margin-top: 0 !important;
+  padding: 0 0 1px 5px !important;
   border: 1px solid rgba(220, 220, 220, .6) !important;
 }
 
@@ -486,6 +494,11 @@ tab {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzEHcdsplgAAAKJJREFUOMvNkz0KAkEMhT9FPIVn8AAy9VZTWWoOINh5Aq9gKYKFpLDaKr0gKfY2lgriTyXIKsswi+Drkhe+8AiBXytEGTX53QTGIUSRNoA+sAtRlt/MTkKEx1u5BWZuev0A1AabVALipufUCHWNgSpEGeQCAIbApg3gCExyAXugcNNTzhXWwNxNb69GL3HrHVi46apupAAuwNRNy9xfKPhrPQHpqSidAzUQrAAAAABJRU5ErkJggg==) !important;
     -moz-image-region: rect(0,16px,16px,0)!important;
     transition: all 0.2s ease 0s;
+}
+
+#PanelUI-button .toolbarbutton-icon {
+    list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANAgMAAADd1Qa3AAAACVBMVEUAAAB8kKN8kKMSLlz9AAAAAnRSTlMAhetBupcAAAAWSURBVAjXY8hatWolwyoggLDggFgJANWZFmMdvM6uAAAAAElFTkSuQmCC) !important;
+    -moz-image-region: rect(0,16px,13px,0)!important;
 }
 
 #home-button .toolbarbutton-icon {
