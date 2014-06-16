@@ -1,4 +1,5 @@
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+/* AGENT_SHEET */
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
 #TabsToolbar:not(:-moz-lwtheme)::after, 
 #TabsToolbar:not(:-moz-lwtheme)::before {
@@ -30,7 +31,8 @@
 
 .tab-background,
 .tab-background-middle,
-.tabbrowser-tab:after, .tabbrowser-tab:before,
+.tabbrowser-tab:after,
+.tabbrowser-tab:before,
 .tabbrowser-tab:after {
   box-shadow: none !important;
   background: none !important;
@@ -128,6 +130,7 @@ select > input {
   margin-left: -10px !important;
   padding-left: 0px !important;
   border: none !important;
+  background: none !important;
 }
 
 #main-window .tabbrowser-tab {
@@ -253,18 +256,18 @@ tab {
   background: #f9f9f9 !important;
   border: none !important;
   height: 35px !important;
-  padding: 0px 0 0px 0 !important;
+  padding: 0 !important;
   border-radius: 0 !important;
   margin-top: 1px !important;
   box-shadow: 0px 1px 0px #f9f9f9 inset !important;
 }
 
-#nav-bar > * {
+/*#nav-bar > * {
 	margin-top: -3px !important;
-}
+}*/
 
-#main-window[sizemode=maximized] #nav-bar {
-  margin-top: -1px !important;
+#nav-bar .toolbarbutton-icon {
+	margin-top: -3px !important;
 }
 
 /* "combines" stop and reload button */
@@ -274,8 +277,22 @@ tab {
 }
 
 #navigator-toolbox toolbarbutton {
-  margin: 0 5px !important;
+  margin: 0 3px !important;
 }
+
+#navigator-toolbox  toolbarbutton#forward-button {
+	margin: 0 10px !important;
+}
+
+#navigator-toolbox #back-button {
+  margin-left: -3px !important;
+}
+
+#forward-button .toolbarbutton-icon {
+	padding: 8px 2px !important;
+}
+
+
 
 /* actual url bar */
 
@@ -284,17 +301,12 @@ tab {
   color: rgb(98,98,98) !important;
   border-radius: 2px !important;
   background: #fff !important;
-  height: 25px !important;
   font-family:"Segoe UI", sans-serif !important;
   font-size: 10pt !important;
 
-  margin-top: 0 !important;
+  margin: 1px 3px 3px 3px !important;
   padding: 0 0 1px 5px !important;
   border: 1px solid rgba(220, 220, 220, .6) !important;
-}
-
-#urlbar-container {
-  padding-top: 2px !important;
 }
 
 /* URL bar drop down */
@@ -582,30 +594,6 @@ window:not([chromehidden~="toolbar"]) #urlbar-container[forwarddisabled] > #urlb
   SCROLLBAR
 */
 
-scrollbar, scrollcorner {
-  -moz-appearance: -moz-win-borderless-glass !important;
-  border: none !important;
-  background:transparent !important;
-}
-
-scrollbarbutton {
-  opacity: .2 !important;
-  border: none !important;
-}
-
-scrollbar thumb { 
-  opacity: .5 !important;
-  background: transparent !important;
-}
-
-scrollbarbutton:hover {
-  opacity: .4 !important;
-}
-
-#content, #appcontent {
-  background-color: transparent !important;
-}
-
 scrollbar,
 scrollbar > slider,
 scrollbar > slider > thumb,
@@ -754,3 +742,4 @@ scrollbar > slider > thumb:active {
 .addon-control{
   padding: 0px !important;
 }
+
