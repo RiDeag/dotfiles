@@ -1,6 +1,11 @@
 /* AGENT_SHEET */
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+/**
+		Delete lines 9 - 16 to get back / forward buttons back
+		Un-comment lines 23 - 28 to add a refresh and stop button to the url bar
+*/
+
 #back-button .toolbarbutton-icon,
 #forward-button .toolbarbutton-icon {
 	display: none !important;
@@ -9,6 +14,21 @@
 #urlbar-container {
 	margin-left: -10px !important;
 }
+
+#urlbar-stop-button,
+#urlbar-reload-button {
+	display: none !important;
+}
+
+/*#urlbar-stop-button,
+#urlbar-reload-button {
+	display: inline !important;
+	opacity: .5 !important;
+	padding-top: 4px !important;
+}*/
+
+
+
 
 #TabsToolbar:not(:-moz-lwtheme)::after, 
 #TabsToolbar:not(:-moz-lwtheme)::before {
@@ -473,12 +493,6 @@ tab {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzk4D2SOowAAASJJREFUOMvN0r9qVEEUBvDfLku0CAsJWBmrNFsFAwNuM1Umdlb7BqaJkBR5i9VCn0FLhTSBNLnd7bKXkEaJbSBpRSzUbTbNCJfN3evaeWA4M3P4vvOdP/zFirL6WJTVxqJ4ZwmCGX7iDcYphl+tBEVZreAl9rCJtVr4CocphuLPR28O/Bgn2F4gaHWOULcGfojTDL7GCI9yeIrXGKQYPtUJ6gpeYSuDn6YYvmXiAgcphq+tTSzKaoKAUYrh2JLWrd0H2Z/5B+s1qJm1jLSP7/iRYujPK/iS/U5LwufZf24q4X3246Ks1hqyr+Ntfn5oauIDnNcmcZT70cEu3uEJLvEsxTC9t4lLLNIFXqQYbptKkGK4wTDvRIXf+Uywj2Ed/H/YHV+FUeRkRIlHAAAAAElFTkSuQmCC) !important;
     -moz-image-region: rect(0,16px,16px,0)!important;
     opacity: 1.0 !important;
-}
-
-#urlbar-stop-button,
-#urlbar-reload-button {
-	opacity: .5 !important;
-	padding-top: 4px !important;
 }
 
 #reload-button .toolbarbutton-icon {
