@@ -1,9 +1,22 @@
 /* AGENT_SHEET */
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
+#back-button .toolbarbutton-icon,
+#forward-button .toolbarbutton-icon {
+	display: none !important;
+}
+
+#urlbar-container {
+	margin-left: -10px !important;
+}
+
 #TabsToolbar:not(:-moz-lwtheme)::after, 
 #TabsToolbar:not(:-moz-lwtheme)::before {
   display: none !important;
+}
+
+#navigator-toolbox {
+	margin-bottom: -1px !important;
 }
 
 .tab-background-start, 
@@ -42,11 +55,11 @@
   border-bottom: 1px solid #e8eaed !important;
 }
 
-#main-window {
+/*#main-window {
   -moz-appearance: -moz-win-glass !important;
-}
+}*/
 
-#urlbar-reload-button,
+
 .urlbar-history-dropmarker,
 #star-button,
 #page-proxy-favicon,
@@ -127,7 +140,7 @@ select > input {
 */
 
 #TabsToolbar {
-  margin-left: -10px !important;
+  margin-left: 0px !important;
   padding-left: 0px !important;
   border: none !important;
   background: none !important;
@@ -304,8 +317,8 @@ tab {
   font-family:"Segoe UI", sans-serif !important;
   font-size: 10pt !important;
 
-  margin: 1px 3px 3px 3px !important;
-  padding: 0 0 1px 5px !important;
+  margin: 1px 3px 3px -5px !important;
+  padding: 2px 0 2px 5px !important;
   border: 1px solid rgba(220, 220, 220, .6) !important;
 }
 
@@ -460,6 +473,12 @@ tab {
     list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH3QcOFzk4D2SOowAAASJJREFUOMvN0r9qVEEUBvDfLku0CAsJWBmrNFsFAwNuM1Umdlb7BqaJkBR5i9VCn0FLhTSBNLnd7bKXkEaJbSBpRSzUbTbNCJfN3evaeWA4M3P4vvOdP/zFirL6WJTVxqJ4ZwmCGX7iDcYphl+tBEVZreAl9rCJtVr4CocphuLPR28O/Bgn2F4gaHWOULcGfojTDL7GCI9yeIrXGKQYPtUJ6gpeYSuDn6YYvmXiAgcphq+tTSzKaoKAUYrh2JLWrd0H2Z/5B+s1qJm1jLSP7/iRYujPK/iS/U5LwufZf24q4X3246Ks1hqyr+Ntfn5oauIDnNcmcZT70cEu3uEJLvEsxTC9t4lLLNIFXqQYbptKkGK4wTDvRIXf+Uywj2Ed/H/YHV+FUeRkRIlHAAAAAElFTkSuQmCC) !important;
     -moz-image-region: rect(0,16px,16px,0)!important;
     opacity: 1.0 !important;
+}
+
+#urlbar-stop-button,
+#urlbar-reload-button {
+	opacity: .5 !important;
+	padding-top: 4px !important;
 }
 
 #reload-button .toolbarbutton-icon {
@@ -742,4 +761,3 @@ scrollbar > slider > thumb:active {
 .addon-control{
   padding: 0px !important;
 }
-
